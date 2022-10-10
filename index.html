@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Notes</title>
+    <meta author="Duy Vu">
+    <link rel="icon" type="image/jpg" href="screenshots/example.png">
+  </head>
+  <body>
+    <header>
+        <h1>Meeting Notes</h1>
+    </header>
+    <section id="content">
+        <h2>Brainstorming Project's Idea</h2>
+        <h2>Oct 9, 2022</h2>
+        <nav>
+            <ul>
+              <li><a href="#attendence">Attendence</a></li>
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#unfinished">Unfinished</a></li>
+              <li><a href="#new">New Business</a></li>
+              <li><a href="#diagram">Diagram</a></li>
+              <li><a href="#video-audio">Video/Audio</a></li>
+              <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </section>
+    <hr>
+    <main>
+        <div id="attendence">
+            <h3>Attendence List</h3>
+            <ul>
+                <li>Duy Vu</li>
+                <li>Jones</li>
+                <li>Mason</li>
+                <li>Smith</li>
+            </ul>
+        </div>
+        <div id="agenda">
+            <h3>Agenda</h3>
+            <ol>
+                <li>Brainstorm project's idea</li>
+                <li>Rapid ideation</li>
+                <li>Discuss each idea's feasibility</li>
+                <li>Narrow the focus</li>
+                <li>Team bonding activities</li>
+            </ol>
+        </div>
+        <span id="unfinished">
+            <h3>Unfinished business from last meeting</h3>
+            <ul>
+                <li><p><strong>Disscus idea's feasibility</strong>: some ideas may look simple and will become very hard to <b>scale</b> and <b>maintain</b></p></li>
+                <li><p><strong>Team bonding exercises</strong>:We should find <b>more</b> games to play</p></li>
+            </ul>
+        </span>
+        <span id="new">
+            <h3>New business</h3>
+            <ul>
+                <li><p><strong>Complete team assignment</strong>: We should finish <i>team assignments</i> by the end of next week</p></li>
+            </ul>
+        </span>
+        <span id="comments">
+            <h3>Comments/Concerns</h3>
+            <ul>
+                <li>We should be more <em>reachable</em> on Slack (eg. respond to message within 12 hours)</li>
+                <li>Do not hesitate to communicate</li>
+            </ul>
+        </span>
+        <div id="diagram">
+            <h3>Diagram</h3>
+            <img src="resources/diagram.png" alt="diagram">
+            <br>
+            <a target="_blank" href="https://www.researchgate.net/profile/Baskar-Kaliappan/publication/319485854/figure/fig3/AS:535238276726785@1504622157960/Sequence-diagram-showing-interaction-between-back-end-and-front-end-with-EEG-headset.png">Source</a>
+            <details>
+                <summary>
+                    Sever-client relationship diagram
+                </summary>
+                This diagram shows the interaction between front-end and back-end.
+            </details>
+        </div>
+        <div id="video-audio">
+            <h3>Video/Audio</h3>
+            <video controls>
+                <source src="resources/video.mov" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="resources/audio.m4a" type="audio/mp3">
+            </audio>
+        </div>
+        <div id="form">
+            <h3>Form</h3>
+            <form id="form">
+                <fieldset>
+                    <input type="text" id="fname" name="fname" value="Duy">
+                    <br>
+                    <input type="text" id="lname" name="lname" value="Vu">
+                    <br>
+                    <input type="checkbox" id="i1" name="i1" value="Coke">
+                    <label for="i1">Finish homework</label>
+                    <br>
+                    <input type="checkbox" id="i2" name="i2" value="Coke">
+                    <label for="i2">Playing games</label>
+                    <br>
+                    <p>Choose your favorite language</p>
+                    <input type="radio" id="html" name="i3" value="Javascript">
+                    <label for="html">Javascript</label><br>
+                    <input type="radio" id="css" name="i3" value="Javascript">
+                    <label for="css">Javascript</label><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <input id="list" list="set">
+                    <datalist id="set">
+                        <option value="temp">
+                        <option value="temp">
+                        <option value="temp">
+                    </datalist><br>
+                    <select>
+                        <option value="js">Javascript</option>
+                        <option value="html">Html</option>
+                        <option value="css">CSS</option>
+                      </select><br>
+                    <textarea placeholder="Nothing"></textarea><br>
+                    <button>submit</button><br>
+                </fieldset>
+              </form>
+        </div>
+    </main>
+    <footer>Meeting Notes</footer>
+  </body>
+</html>
