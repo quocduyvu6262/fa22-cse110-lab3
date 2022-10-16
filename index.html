@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <style>
         header h1{
-            color: rgb(149, 122, 122);
+            color: rgb(240, 147, 147);
+            background: hsl(30 10% 40%);
             font-size: 50px;
         }
     </style>
@@ -33,16 +34,18 @@
     </section>
     <hr>
     <main>
-        <div id="attendence">
+
+        <div id="attendence" class="detail">
             <h3>Attendence List</h3>
             <ul>
                 <li>Duy Vu</li>
                 <li>Jones</li>
                 <li>Mason</li>
                 <li>Smith</li>
+                <li>Smith</li>
             </ul>
         </div>
-        <div id="agenda">
+        <div id="agenda" class="detail">
             <h3>Agenda</h3>
             <ol>
                 <li>Brainstorm project's idea</li>
@@ -52,48 +55,49 @@
                 <li>Team bonding activities</li>
             </ol>
         </div>
-        <div id="unfinished">
-            <h3>Unfinished business from last meeting</h3>
-            <ul>
-                <li><span><strong>Disscus idea's feasibility</strong>: some ideas may look simple and will become very hard to <b>scale</b> and <b>maintain</b></span></li>
-                <li><span><strong>Team bonding exercises</strong>:We should find <b>more</b> games to play</span></li>
-            </ul>
+        <div class="grid-container">
+            <div id="unfinished" class="detail">
+                <h3>Unfinished business from last meeting</h3>
+                <ul>
+                    <li><span><strong>Disscus idea's feasibility</strong>: some ideas may look simple and will become very hard to <b>scale</b> and <b>maintain</b></span></li>
+                    <li><span><strong>Team bonding exercises</strong>:We should find <b>more</b> games to play</span></li>
+                </ul>
+            </div>
+            <div id="new" class="detail">
+                <h3>New business</h3>
+                <ul>
+                    <li><span><strong>Complete team assignment</strong>: We should finish <i>team assignments</i> by the end of next week</span></li>
+                </ul>
+            </div>
+            <div id="comments" class="detail">
+                <h3>Comments/Concerns</h3>
+                <ul>
+                    <li>We should be more <em>reachable</em> on Slack (eg. respond to message within 12 hours)</li>
+                    <li>Do not hesitate to communicate</li>
+                </ul>
+            </div>
+            <div id="diagram" class="detail">
+                <h3>Diagram</h3>
+                <img src="resources/diagram.png" alt="diagram">
+                <details>
+                    <summary>
+                        Sever-client relationship diagram
+                    </summary>
+                    This diagram shows the interaction between front-end and back-end.
+                </details>
+                <a target="_blank" href="https://www.researchgate.net/profile/Baskar-Kaliappan/publication/319485854/figure/fig3/AS:535238276726785@1504622157960/Sequence-diagram-showing-interaction-between-back-end-and-front-end-with-EEG-headset.png">Source</a>
+            </div>
         </div>
-        <div id="new">
-            <h3>New business</h3>
-            <ul>
-                <li><span><strong>Complete team assignment</strong>: We should finish <i>team assignments</i> by the end of next week</span></li>
-            </ul>
-        </div>
-        <div id="comments">
-            <h3>Comments/Concerns</h3>
-            <ul>
-                <li>We should be more <em>reachable</em> on Slack (eg. respond to message within 12 hours)</li>
-                <li>Do not hesitate to communicate</li>
-            </ul>
-        </div>
-        <div id="diagram">
-            <h3>Diagram</h3>
-            <img src="resources/diagram.png" alt="diagram">
-            <br>
-            <a target="_blank" href="https://www.researchgate.net/profile/Baskar-Kaliappan/publication/319485854/figure/fig3/AS:535238276726785@1504622157960/Sequence-diagram-showing-interaction-between-back-end-and-front-end-with-EEG-headset.png">Source</a>
-            <details>
-                <summary>
-                    Sever-client relationship diagram
-                </summary>
-                This diagram shows the interaction between front-end and back-end.
-            </details>
-        </div>
-        <div id="video-audio">
+        <div id="video-audio" class="detail">
             <h3>Video/Audio</h3>
-            <video controls>
+            <video width="320" height="240" controls>
                 <source src="resources/video.mov" type="video/mp4">
             </video>
             <audio controls>
                 <source src="resources/audio.m4a" type="audio/mp3">
             </audio>
         </div>
-        <div id="form">
+        <div id="form" class="detail">
             <h3>Form</h3>
             <form>
                 <fieldset>
@@ -128,7 +132,7 @@
                     <textarea placeholder="Nothing"></textarea><br>
                     <button>submit</button><br>
                 </fieldset>
-              </form>
+            </form>
         </div>
     </main>
     <footer>Meeting Notes</footer>
