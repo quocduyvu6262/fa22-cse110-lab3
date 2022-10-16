@@ -124,6 +124,15 @@ div .form{
     position: relative;
 }
 
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(248, 182, 159);
+    color: white;
+  }
+
 /*Media Query*/
 @media only screen and (max-width: 1000px) {
     header h1 {
